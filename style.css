@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+header p {
+    color: #64748b;
+}
+
+.card,
+.summary {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+/* BARIS MENGULANG */
+tr.mengulang {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+tr.mengulang:hover {
+    background: #fecaca;
+}
+
+.status {
+    font-weight: bold;
+}
+
+/* RINGKASAN */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.summary-item {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-item p {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.summary-item h3 {
+    font-size: 24px;
+    color: #0f172a;
+}
+
+.highlight {
+    background: #dbeafe;
+}
+
+.highlight h3 {
+    color: #2563eb;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
